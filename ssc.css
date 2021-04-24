@@ -1,0 +1,353 @@
+ .banner-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url('img/pri.jpg');
+        background-size: cover;
+
+      }
+ .nav_txt{
+        font-family: 'Asap Condensed', sans-serif; font-size: 1.2rem;letter-spacing: 1.1px;
+      }
+.nav_txt:hover{
+        color: black;
+  transition-duration:  0.5s;
+  transition-timing-function: ease-in;
+      }
+
+*{
+outline:none;  
+}
+
+/*effect-underline*/
+a.effect-underline:after {
+  content: '';
+  position: absolute;
+  left: 25%;
+  display: inline-block;
+  height: 1em;
+  width: 50%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+a.effect-underline:hover:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+
+/* effect-shine */
+.navbar-brand:hover {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+
+  -webkit-mask-size: 200%;
+  animation: shine 0.8s infinite;
+
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
+.nav-colored { background-color: #045de9;background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%); }
+.nav-transparent { background-color:transparent;}
+
+/*-----------------------------------------------------*/
+
+/*hr {
+    height: 8px;
+    background-color: #045de9;
+    background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+    
+    border: 0;
+    height: 3px;
+    width: 30%;
+    justify-content: space-around;
+    
+}*/
+/*hr{
+  margin: 0px 350px 0px 350px;
+  background-color: #045de9;
+  background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+  padding-top: 5px;
+  
+}*/
+
+
+.for-body h2{
+  text-align: center;
+
+}
+.for-body p{
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 10px 50px 10px 50px;
+}
+.for-body ul{
+  padding: 10px 50px 10px 50px;
+}
+
+.for-body{
+  font-family: 'Quicksand', sans-serif;
+  padding: 2em;
+}
+
+.for-body a{
+  text-decoration-color: black;
+  color: black;
+}
+
+
+/*--------------------------------------------BEGIN YOUR CODE FROM HERE-----------------------------------*/
+
+.contact-title span{
+  font-size: 18px;color: white;margin-bottom:   10px;
+  display: block;font-weight: 700;
+}
+
+.contact-title h2{
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.contact-form input{
+  width: 100%;
+    padding: 20px;margin-bottom: 25px;border: 0;
+    /*outline: none;*/
+    border-radius: 5px;
+    /*border: 0.8px solid black;*/box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: #f6f7f9;
+}
+
+.contact-form textarea{
+  width: 100%;
+  height: 200px;
+  padding: 20px;margin-bottom: 20px;
+  border-radius: 5px;
+  background: #f6f7f9;
+  /*outline: none;*/
+    /*border: 0.8px solid black;*/box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+#formcolor {
+  border-radius: 5px;
+  background-color: #7f53ac;
+  background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+  padding: 2rem;
+  /*border: 0.8px solid black;*/box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}*/
+
+
+
+/*.card-img-top{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+*/
+
+
+/*----------- social -----------------*/
+
+.our-services{
+    margin-top: 100px;
+}
+
+.title{
+    margin-bottom: 100px;
+}
+
+.title h2{
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.title h2::before{
+    content: '';
+    position: absolute;
+    /*left: 35%;*/
+    bottom: -10px;width: 131px;height: 4px;background: #56a06e;
+}
+
+.services-wrapper{
+    padding: 30px;
+    background: white;
+    transition: .4s;
+
+}
+
+.services-wrapper:hover{
+    box-shadow: 5px 25px 40px 0px rgba(0,0,0,0.15);
+    transform: translateY(-20px); 
+}
+
+.services-img{
+    text-align: center;
+}
+
+.services-img img{
+
+width: 40%;
+}
+
+
+
+.services-content{
+    text-align: center;
+    color: #3b3b3b;
+    margin: 15px 0;
+    font-size: 18px;font-weight:  500;
+}
+
+.services-content p{
+    color: #888;font-size: 1rem;
+}
+
+.services-content a{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;color: rgb(105,101,101);
+}
+
+
+
+
+
+
+.ttl{
+    margin-bottom: 100px;
+}
+
+.ttl h4{
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.ttl h4::before{
+    content: '';
+    position: absolute;
+    
+    bottom: -10px;width: 131px;height: 4px;background: #56a06e;
+}
+
+/*----------------------------------------------------WCU-------------------------------------------------------*/
+.title #req::before{
+    content: '';
+    position: absolute;
+    
+    bottom: -10px;width: 131px;height: 4px;background: #56a06e;
+}
+
+
+
+
+
+
+
+
+/*----------- social END-----------------*/
+
+
+
+
+
+
+
+/*<!-----------MediaQuery------------->*/
+
+
+
+
+@media (max-width: 500px){
+  .headmy{
+    font-size: 1.5rem;
+  }
+  .for-body h2{
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 390px){
+  .headmy{
+    font-size: 1.3rem;
+  }
+  .for-body h2{
+    font-size: 1.5rem;
+  }
+  #firsth2{
+    font-size: 1.7rem;
+  }
+
+}
+
+
+@media(min-width: 576px) and (max-width: 767px)
+{
+  .nav_txt
+  {
+    font-size: small;
+  }
+
+}
+
+@media(min-width: 766px){
+
+  a.effect-underline:after{
+    left: 30%;
+    width: 40%;
+  }
+
+}
+@media(max-width: 600px){
+  .nav_txt{
+    font-size: 0.9rem;
+  }
+    .services-img img{
+    width: 100%;height: auto;
+
+  }
+}
+@media(max-height: 600px){
+  .nav_txt{
+    font-size: 0.75rem;
+  }
+
+}
+
+@media(min-width: 601px){
+      .services-img img{
+    width: 50%;height: auto;
+
+  }
+}
